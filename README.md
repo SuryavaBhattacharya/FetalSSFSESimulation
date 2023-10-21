@@ -1,7 +1,7 @@
 # FetalSSFSESimulation
 
 ## Introduction
-A silmulation of single-shot Fast spin echo sequences on a simulated moving fetal brain for a Philip's system. This simulation is based on Helene Lajous' FaBiAN simulation:
+A silmulation of single-shot Fast spin echo sequences on a simulated moving fetal brain for a Philip's system. This simulation is based on Hélène Lajous' FaBiAN simulation:
 *Code:* 
 https://github.com/Medical-Image-Analysis-Laboratory/FaBiAN https://doi.org/10.5281/zenodo.5471094 
 *Paper:*
@@ -22,7 +22,7 @@ We also use the edit-image function from MIRTK (https://mirtk.github.io/commands
 ## Publication
 This code was made to help with my personal publication:
 https://doi.org/10.1007/978-3-031-45544-5_4 
-If this code was of use for you, please cite the above publication as well as Helene's original paper: https://doi.org/10.1038/s41598-022-10335-4
+If this code was of use for you, please cite the above publication as well as Hélène's original paper: https://doi.org/10.1038/s41598-022-10335-4
 
 ## Contact
 Please feel free to get in contact with me with any queries regarding this code:
