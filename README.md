@@ -17,7 +17,7 @@ This work was supported by funding from the EPSRC Centre for Doctoral Training i
 
 ## Dependencies
 We use S.J Malik's EPG-X instead of Weigel's (used in the original FaBiAN phantom). This library includes the code from that library, but find the full library here: https://github.com/mriphysics/EPG-X and the paper is here: https://doi.org/10.1002/mrm.27040
-We also use the edit-image function from MIRTK (https://mirtk.github.io/commands/edit-image.html ) to make it usable with SVRTK (https://github.com/SVRTK/SVRTK ) so for best results I recommend installing this.
+We also use the edit-image function from MIRTK (https://mirtk.github.io/commands/edit-image.html) to make it usable with SVRTK (https://github.com/SVRTK/SVRTK) so for best results I recommend installing this.
 
 ## Publication
 This code was made to help with my personal publication:
