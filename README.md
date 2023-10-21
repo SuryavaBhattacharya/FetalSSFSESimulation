@@ -1,4 +1,4 @@
-# FetalSSFSESimulation
+# FetalSSFSESimulation - A modified FaBiAN phantom
 
 ## Introduction
 A silmulation of single-shot Fast spin echo sequences on a simulated moving fetal brain for a Philip's system. This simulation is based on Hélène Lajous' FaBiAN simulation:
