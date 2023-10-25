@@ -28,7 +28,7 @@ SliceThickness = 2.5; % mm
 SliceGap = -1.25; % mm
 SliceWindow = delz;
 ImRes = 1.25; % mm iso
-Acq = 324; % iso
+Acq = 288; % square matrix
 %%
 TSE_Factor = 99; % Make sure the TSE factor...
 FOV = [350,350,NbSlices*ImRes]; % ... and FOV (and resolution) correspond to each other.
