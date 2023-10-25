@@ -224,6 +224,7 @@ Infothing.raw.pixdim = [1,Infothing.PixelDimensions,1,0,0,0];
 switch orientation
     case 1
         Infothing.PixelDimensions = [ImRes,FOV(1:2)/Acq];
+        Infothing.Transform.T(1:3,1:3) = Infothing.Transform.T(1:3,1:3)*roty(90)*rotz(180);
     case 2
         Infothing.PixelDimensions = [FOV(1)/Acq,ImRes,FOV(2)/Acq];
         Infothing.Transform.T(1:3,1:3) = Infothing.Transform.T(1:3,1:3)*rotx(90)*rotz(180);
