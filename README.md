@@ -12,7 +12,7 @@ We use the T1 and T2 values suggested by Lajous and colleagues and the standard 
 We deal with smaller matrices (thus lower RAM usage) by going slice by slice instead of calculating on the entire matrix. In addition, we use linear interpolation on individual tissue classes followed by max voting for transformations and we model the slice profiles using Bloch simulations and then integrate to get an overall signal of the slice rather than weighting the slice with a Gaussian function.
 
 ## Current version
-We currently assume perfect recovery of all slices, with no slice cross-talk, and no in-slice motion or B1 inhomogeneites as this was not within our focus in our paper. In addition, we only use Philip's parameters. The code requires using RF pulses that will give the appropriate slice profiles. The example shows how to deal with the RF pulses. 
+We currently assume perfect recovery of all slices, with no slice cross-talk, and no in-slice motion or B1 inhomogeneites as this was not within our focus in our paper. In addition, we only use Philip's parameters. The code requires using RF pulses that will give the appropriate slice profiles. The example shows an example of RF pulse objects used in the "GetCorruptedStacks.m" function
 
 ## Acknwoledgements 
 This work was supported by funding from the EPSRC Centre for Doctoral Training in Smart Medical Imaging (EP/S022104/1), the core funding from the Wellcome/EPSRC Centre for Medical Engineering [WT203148/Z/16/Z] and by the National Institute for Health Research Clinical Research Facility. 
