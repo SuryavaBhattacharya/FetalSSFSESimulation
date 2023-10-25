@@ -188,7 +188,7 @@ parfor ii = 1:NbSlices
     SliceSignals = GetSliceSignals(SliceObject,Alphas,ESP);
     FourierSignals = ConvertSignalsToFourier(SliceSignals,FOV,PhantomRes,Acq);
     KSpace = Getkspace(FourierSignals,ACF,TE,ESP,FOV,ImRes);
-    KSpaceNoise = add_Wnoise(KSpace,std_noise);
+    KSpaceNoise = add_noise(KSpace,std_noise);
 
     % Obtain spatial version of the slice:
     Stacks(:,:,ii) = ifft2(KSpaceNoise);
