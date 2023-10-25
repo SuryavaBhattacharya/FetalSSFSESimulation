@@ -7,7 +7,7 @@ https://github.com/Medical-Image-Analysis-Laboratory/FaBiAN https://doi.org/10.5
 *Paper:*
 https://doi.org/10.1038/s41598-022-10335-4
 
-We use the T1 and T2 values suggested by Lajous and colleagues and the standard atlas by Gholipour and colleagues ( Atlas: http://crl.med.harvard.edu/research/fetal_brain_atlas/  Paper: https://doi.org/10.1038/s41598-017-00525-w ) 
+We use the T1 and T2 values suggested by Lajous and colleagues and the standard atlas by Gholipour and colleagues ( *Atlas:* http://crl.med.harvard.edu/research/fetal_brain_atlas/  *Paper:* https://doi.org/10.1038/s41598-017-00525-w ) 
 
 We deal with smaller matrices (thus lower RAM usage) by going slice by slice instead of calculating on the entire matrix. In addition, we use linear interpolation on individual tissue classes followed by max voting for transformations and we model the slice profiles using Bloch simulations and then integrate to get an overall signal of the slice rather than weighting the slice with a Gaussian function.
 
