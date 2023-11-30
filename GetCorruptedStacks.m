@@ -194,6 +194,10 @@ parfor ii = 1:NbSlices
     Stacks(:,:,ii) = ifft2(KSpaceNoise);
 end
 
+% Delete pool object
+poolobj = gcp('nocreate');
+delete(poolobj);
+
 % Fix slice ordering: 
 StacksCopy = zeros(Acq,Acq,NbSlices);
 for ii = 1:NbSlices
@@ -217,6 +221,7 @@ niftiwrite(CorruptedStack,...
 % Fix header and orientation for SVRTK and IRTK:
 Infothing = niftiinfo(StackName);
 
+% Deal with header information
 Infothing.TransformName = 'Qform';
 Infothing.ImageSize = size(CorruptedStack);
 Infothing.Datatype = 'int16';
